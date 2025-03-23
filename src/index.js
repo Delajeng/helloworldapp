@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.get('/', (req, res) => {
-  const regionName = process.env.REGION_NAME || 'Default';
+  const regionName = process.env.APP_NAME || 'Default';
   res.send(`
     <!DOCTYPE html>
     <html lang="en">
